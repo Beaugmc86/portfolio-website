@@ -132,7 +132,7 @@ body {
 
     .about-content {
         display: flex;
-        width: 1 fr;
+        width: 700px;
         padding: 24px;
         justify-content: center;
         flex-direction: column;
@@ -142,6 +142,10 @@ body {
     .about-content__item {
         list-style-type: none;
         padding: 0
+    }
+
+    .about-content__item:nth-child(2) {
+        flex: 0 0 700px;
     }
 
     .about-content-picture {
