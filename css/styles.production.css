@@ -161,10 +161,6 @@ body {
         padding: 0
     }
 
-    .about-content__item:nth-child(2) {
-        flex: 0 1 500px;
-    }
-
     .about-content-picture {
         clear: both;
         -webkit-box-pack: center;
