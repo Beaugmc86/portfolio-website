@@ -14,6 +14,17 @@ Text Color-Active (Red): Red
 Primary Button Color (Green): #51b8a8;
 Primary Button Text (White): White
 */
+
+:root {
+    --primary-color:#dcdde0;
+    --primary-color-darker: darken(#dcdde0, 30%);
+    --primary-color-text:#2b2b2b;
+    --text-color-active:#ff0000;
+    --primary-color-button:#34776d;
+    --primary-color-button-text:#ffffff;
+    --grid-primary-color: #a9a9a9;
+    --my-code-ref-text:#2012e4;
+}
    
 * {
     -webkit-box-sizing: border-box;
@@ -21,8 +32,8 @@ Primary Button Text (White): White
 }
 
 body {
-    background: #dcdde0;
-    color: #2b2b2b;
+    background: var(--primary-color);
+    color: var(--primary-color-text);
     font-family: 'PT Serif', serif;
     font-weight: 400;
     /*Sets font boldness*/
@@ -48,7 +59,7 @@ body {
     }
 
     .navigation-list__item {
-        color:#2b2b2b;
+        color:var(--primary-color-text);
         text-decoration: none; 
     }
 
@@ -58,11 +69,11 @@ body {
     }
 
     .navigation-list__item:active {
-        color: #ff0000;
+        color: var(--text-color-active);
     }
     
     a {
-        color: #2b2b2b;
+        color: var(--primary-color-text);
         text-decoration: none
     }
 
@@ -72,7 +83,7 @@ body {
     }
 
     a:active {
-        color: #ff0000;
+        color: var(--text-color-active);
     }
 
     .page-header {
@@ -114,9 +125,9 @@ body {
     }
 
     .grid__item {
-        background-color: #a9a9a9;
+        background-color: var(--grid-primary-color);
         border-radius: 10px;
-        padding: 5px;
+        padding: 10px;
         -webkit-box-shadow: 2px 5px 5px 2px;
                 box-shadow: 2px 5px 5px 2px;
         grid-gap: 20px;
@@ -145,7 +156,6 @@ body {
         display: -ms-flexbox;
         display: flex;
         width: 1 fr;
-        padding: 24px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -172,7 +182,90 @@ body {
     }
 
     .my-code-ref__item {
-        color: #2012e4;
+        color: var(--my-code-ref-text);
+    }
+
+    .heading-contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1fr;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+
+    .work-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1fr;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+
+    .work-header_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1fr;
+        padding: 24px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1fr;
+        padding: 24px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-contact {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 32px 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+        margin: 0 24px 0;
+        background-color: var(--grid-primary-color);
+        padding: 24px 32px ;
+        border-radius: 12px;
+    }
+
+    .grid-contact__item {
+        width: auto;
+        min-height: auto;
+        padding: 0 24px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .page-footer {
@@ -187,57 +280,16 @@ body {
         text-align: center;
     }
 
-    button {
+    button,
+    .button, button {
         /* overwrites browser defaults and resets the border */
         border: none;
         display: inline-block;
         /* takes the font from the outer container */
         font-family: inherit;
         /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-        background-color:#34776d;
-        color:#ffffff;
-        text-decoration: none;
-        /*adds spacing to the button*/
-        padding: 10px;
-        border-radius: 3px;
-        /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-        -webkit-transition-duration: opacity 0.2s;
-             -o-transition-duration: opacity 0.2s;
-                transition-duration: opacity 0.2s;
-        }
-
-    .button {
-        /* overwrites browser defaults and resets the border */
-        border: none;
-        display: inline-block;
-        /* takes the font from the outer container */
-        font-family: inherit;
-        /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-        background-color:#34776d;
-        color:#ffffff;
-        text-decoration: none;
-        /*adds spacing to the button*/
-        padding: 10px;
-        border-radius: 3px;
-        /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-        -webkit-transition-duration: opacity 0.2s;
-             -o-transition-duration: opacity 0.2s;
-                transition-duration: opacity 0.2s;
-        }
-
-    button {
-        /* overwrites browser defaults and resets the border */
-        border: none;
-        display: inline-block;
-        /* takes the font from the outer container */
-        font-family: inherit;
-        /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-        background-color:#34776d;
-        color:#ffffff;
+        background-color:var(--primary-color-button);
+        color:var(--primary-color-button-text);
         text-decoration: none;
         /*adds spacing to the button*/
         padding: 10px;
@@ -265,7 +317,7 @@ body {
 
     button:active {
         /* selected link */
-        color:#ffffff;
+        color:var(--primary-color-button-text);
         text-decoration: none;
         opacity: 1.25;
       }
