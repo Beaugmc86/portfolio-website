@@ -109,7 +109,7 @@ body {
     .grid__item {
         background-color: var(--grid-primary-color);
         border-radius: 10px;
-        padding: 5px;
+        padding: 10px;
         box-shadow: 2px 5px 5px 2px;
         grid-gap: 20px;
     }
@@ -133,7 +133,6 @@ body {
     .about-content {
         display: flex;
         width: 1 fr;
-        padding: 24px;
         justify-content: center;
         flex-direction: column;
         text-align: center;
@@ -152,6 +151,57 @@ body {
 
     .my-code-ref__item {
         color: var(--my-code-ref-text);
+    }
+
+    .heading-contact {
+        display: flex;
+        width: 1fr;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work-header {
+        display: flex;
+        width: 1fr;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work-header_item {
+        display: flex;
+        width: 1fr;
+        padding: 24px;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        display: flex;
+        width: 1fr;
+        padding: 24px;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+        margin: 0 24px 0;
+        background-color: var(--grid-primary-color);
+        padding: 24px 32px ;
+        border-radius: 12px;
+    }
+
+    .grid-contact__item {
+        width: auto;
+        min-height: auto;
+        padding: 0 24px;
+        justify-content: center;
     }
 
     .page-footer {

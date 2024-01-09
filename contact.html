@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Beau McClain</title>
     <link rel="shortcut icon" href="img/Favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.production.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="page-header">
         <!-- Logo inserted here --> 
@@ -33,6 +34,7 @@
         </nav>
     </header>
     <main>
+<<<<<<< Updated upstream
         <h1>Contact</h1>
         <div>
             <h2>Beau McClain</h2>
@@ -44,19 +46,39 @@
             <a href="mailto:beaugmc86@gmail.com">Email: beaugmc86@gmail.com</a>
             <br>
             <a href="mailto:beaugmc86@gmail.com">Contact me</a>
+=======
+        <div class="heading-contact">
+            <h1>Contact</h1>
+>>>>>>> Stashed changes
         </div>
-        <form action="" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">E-mail*: </label>
-            <input type="email" id="contact-email" required>
-            <br>
-            <label class="standard-label" for="contact-telephone">Telephone: </label>
-            <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-            <br>
-            <label class="standard-label" for="contact-message"> Message*: </label>
-            <textarea maxlength="240" id="contact-message" required></textarea>
-            
-            <button type="submit" id="button" class> Send message</button>
-        </form>         
+        <div class="grid-contact">
+            <div class="grid-contact__item">
+                <h2 style="margin-top: 0px;">Beau McClain</h2>
+                <p style="margin-bottom: 0px;">1234 NE 7th Ave</p>
+                <p style="margin-top: 0px;">Portland, OR 97211</p>
+                <a href="tel:+1-503-555-9804">Tel: +1-503-956-9804</a>
+                <br>
+                <a href="mailto:beaugmc86@gmail.com">Email: beaugmc86@gmail.com</a>
+            </div>
+            <div class="grid-contact__item">
+                <a href="mailto:beaugmc86@gmail.com">Contact me</a>
+                <form action="#" method="post" id="contact-form">
+                    <label class="standard-label" for="contact-email">E-mail: </label>
+                    <br>
+                    <input type="email" id="contact-email" required>
+                    <br>
+                    <label class="standard-label" for="contact-telephone">Telephone: </label>
+                    <br>
+                    <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    <br>
+                    <label class="standard-label" for="contact-message"> Message: </label>
+                    <br>
+                    <textarea maxlength="240" id="contact-message" required></textarea>
+                    <br>
+                    <button type="submit" id="button" class> Send message</button>
+                </form>
+            </div>
+        </div>       
     </main>
     <footer class="page-footer">
         <p>Find me on</p>
@@ -64,8 +86,6 @@
             <!-- Logos and links insterted below -->
             <a href="https://github.com/Beaugmc86" target="_blank">
                 <img src="img/github_icon.svg" alt="Github"></a>
-            <a href="https://twitter.com/" target="_blank">
-                <img src="img/twitter_icon.svg" alt="Twitter"></a>
             <a href="https://www.linkedin.com/in/beau-mcclain-cpa-414283a4/" target="_blank">
                 <img src="img/linkedin_icon.svg" alt="Linkedin"></a>
         </div>
