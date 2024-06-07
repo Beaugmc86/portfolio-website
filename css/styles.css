@@ -178,6 +178,12 @@ body {
         text-align: center;
     }
 
+    .cardimg {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Maintain aspect ratio, cover the given dimension */
+    }
+
     .contact-info {
         display: flex;
         width: 1fr;
@@ -322,3 +328,4 @@ body {
       .cloud-back {
         animation: 34s cloud-move-reverse infinite alternate linear;
       }
+
