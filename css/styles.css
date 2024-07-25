@@ -254,6 +254,19 @@ body {
         text-decoration: none;
         opacity: 1.25;
       }
+    
+    .case-header {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .case-header_item {
+        display:inline-block;
+        margin: 20px auto;
+    }
+
+    
 
     /* setting media queries for mobile screens */
     @media all and (max-width: 500px ){
