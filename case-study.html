@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Study</title>
     <link rel="shortcut icon" href="img/Favicon.png">
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
@@ -35,12 +33,10 @@
     </header>
 
     <!-- Main content-->
-    <main class="case-body">
-      
+    <main class="case-body">      
         <div class="case-header">
             <h1 class="case-header_item">Case Study for myFlix full-stack project</h1>
         </div>
-
         <div class="case-study">
             <div class="intro">
                 <div class="intro-content">
@@ -54,33 +50,28 @@
                 <div class="intro-img">
                     <img src="img/myFlix.png" alt="screenshot of movies">
                 </div>
-            </div>
-            
+            </div>            
             <h2 class="approach-title">Approach</h2>
             <div class="server-side">
+                <div class="server-img">
+                  <img src="img/mongodb-movie database.png" alt="screenshot of mongodb database">
+                </div>
                 <div class="server-content">
                     <h3>Server-Side</h3>
                         <p>I created a RESTful API using Node.js and Express, that interacts with a non-relational database (MongoDB). The API can be accessed via commonly used HTTP methods like GET or POST. To retrieve data from and store data in the database, CRUD methods are used. The API provides movie information in JSON format.</p>
-                    
-                </div>
-                <div class="server-img">
-                    <img src="img/mongodb-movie database.png" alt="screenshot of mongodb database">
-                </div>
-                </div>
-            
-            
+                </div>                
+                </div>            
             <div class="client-side">
                 <div class="client-content">
                   <h3>Client-Side</h3>
                       <p>After completing the API, I started to build the interface users would need when making requests to, and receiving responses from, the server-side. It is a single-page, responsive application, developed with React and React-Redux. It provides several interface views, including, but not limited to, a main view (shows a list of all movies), single movie view (shows data about a single movie and allows users to add the movie to their list of favorites), a login view, a registration view and a profile view (where users can update their user data and list of favorites).</p>  
-                </div>
-            </div>
+                </div>           
                 <div class="client-img"> 
                     <img src="img/myFlix-login.png">
                     <img src="img/myFlix-single movie view.png">
                     <img src="img/myFlix-profile view.png">
                 </div>
-              
+            </div>              
             <div class="challenges">
                 <h2>Challenges</h2>
                     <p>The myFlix full-stack project was one of my most challenging and rewarding projects featured in my portfolio. Building the back-end, front-end, learning to test endpoints, using React, and hosting the website all together was a complex process that required me to use the skills I've built up over the years in my previous career experiences. Being detail oriented, taking notes, and organized helped me to take this challenge head-on and become a more competent developer.</p>
@@ -94,10 +85,20 @@
                 <ul>
                     <li>Lead Developer: Beau McClain</li>
                     <li>Tutor: Francis Kim</li>
-                      <li>Mentors: Vinicius De Antoni, Sebastin Kolman</li>
+                    <li>Mentors: Vinicius De Antoni, Sebastin Kolman</li>
                 </ul>
             </div>
         </div>
     </main>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+          <!-- Logos and links insterted below -->
+          <a href="https://github.com/Beaugmc86" target="_blank">
+              <img src="img/github_icon.svg" alt="Github"></a>
+          <a href="https://www.linkedin.com/in/beau-mcclain-cpa-414283a4/" target="_blank">
+              <img src="img/linkedin_icon.svg" alt="Linkedin"></a>
+      </div>
+  </footer>
 </body>
 </html>
