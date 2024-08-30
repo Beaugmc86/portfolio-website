@@ -210,15 +210,19 @@ button:active {
 
 .about-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.about-content__item {
-    list-style-type: none;
-    padding: 0
+.about-content__title {
+    text-align: center;
+}
+
+.about-content__button {
+    text-align: center;
 }
 
 .about-content-picture {
