@@ -23,7 +23,6 @@ Primary Button Text (White): White
     --primary-color-button:#34776d;
     --primary-color-button-text:#ffffff;
     --grid-primary-color: #a9a9a9;
-    --profile-code-ref-text:#2012e4;
 }
    
 * {
@@ -113,14 +112,19 @@ a:active {
     color: var(--text-color-active);
 }
 
-/* .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-} */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 
 .profile {
     max-width: 700px;
     margin: 0 auto;
+}
+
+.profile-welcome {
+    text-align: center;
 }
 
 .profile_portrait {
@@ -128,10 +132,6 @@ a:active {
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
-}
-
-.profile-code-ref__item {
-    color: var(--profile-code-ref-text);
 }
 
 .grid {
