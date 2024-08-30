@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work</title>
+    <title>My Projects</title>
     <link rel="shortcut icon" href="img/Favicon.png">
     <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.production.css">
@@ -24,7 +24,7 @@
                     <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
                 </li>
                 <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                    <a href="work.html" role="menuitem" class="navigation-list__item">My Projects</a>
                  </li>
                 <li role="presentation">
                     <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
@@ -35,7 +35,7 @@
     <!-- Main content-->
     <main>
         <div class="work-header">
-            <h1 class="work-header_item">Work</h1>
+            <h1 class="work-header_item">My Projects</h1>
         </div>
         <div class="grid">
             <!--Grid items will live here-->
@@ -45,10 +45,10 @@
                 <p>
                     Project to create simple pokedex app using HTML, CSS, Javascript, and Bootstrap. Webpage contains a list of pokemon buttons activating modal to show details of original 150 pokemon.
                 </p>
-                <p>
-                <a href="https://beaugmc86.github.io/Pokedex-project/">Pokedex App</a>
-                </p>
-                <a href="https://github.com/Beaugmc86/Pokedex-project">See project on GitHub</a>
+                <div class="grid__item-button">
+                    <button href="https://beaugmc86.github.io/Pokedex-project/">Pokedex App</button>
+                    <button href="https://github.com/Beaugmc86/Pokedex-project">Project Code</button>
+                </div>
             </div>
             <div class="grid__item">
                 <h2>Meet App</h2>
@@ -56,35 +56,52 @@
                 <p>
                     The Meet app is a serverless, progressive web application (PWA) using React and built with the test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events in specific cities.
                 </p>
-                <p>
-                <a href="https://beaugmc86.github.io/meet/">Meet App</a>
-                </p>
-                <a href="https://github.com/Beaugmc86/meet">See project on GitHub</a>
+                <div class="grid__item-button">
+                    <button href="https://beaugmc86.github.io/meet/">Meet App</button>               
+                    <button href="https://github.com/Beaugmc86/meet">Project Code</button>
+                </div>
             </div>
             <div class="grid__item">
-                <h2>myFlix</h2>
+                <h2>myFlix - React</h2>
                 <img src="img/myFlix.png" class="cardimg">
                 <p>
                     A web app that provides users with access to information about movies, directors, and genres. Users can sign up, update personal data, and create a list of favorites. Server-side and client-side were developed using the MERN stack.
                 </p>
-                <p>
-                <a href="https://beaugmc86.github.io/portfolio-website/case-study.html">myFlix App</a>
-                </p>
-                <a href="https://github.com/Beaugmc86/myFlix-client">See project on GitHub</a>
+                <div class="grid__item-button">
+                    <button href="https://main--be-myflix.netlify.app/login">myFlix App</button>               
+                    <button href="https://github.com/Beaugmc86/myFlix-client">Project Code</button>
+                    <button href="https://beaugmc86.github.io/portfolio-website/case-study.html">Case Study</button>
+                </div>
             </div>
             <div class="grid__item">
-                <h2>Styleguide for portfolio page</h2>
+                <h2>myFlix - Angular</h2>
+                <img src="img/myFlix - Angular.png" class="cardimg">
                 <p>
-                    Here you can find the styleguide I've created for this portfolio page. It was created with the livingstyleguide gem and grunt.
+                    A web app that provides users with access to information about movies, directors, and genres. Users can sign up, update personal data, and create a list of favorites. Server-side and client-side were developed using the MERN stack.
                 </p>
-                <a href="#">See styleguide</a>
+                <div class="grid__item-button">
+                    <button href="https://beaugmc86.github.io/myFlix-Angular/welcome">myFlix App</button>               
+                    <button href="https://github.com/Beaugmc86/myFlix-Angular">Project Code</button>
+                </div>
             </div>
             <div class="grid__item">
-                <h2>Your project?</h2>
+                <h2>myFlix - API</h2>
+                <img src="img/mongodb-movie database.png" class="cardimg">
                 <p>
-                    I can help in realizing front-end and back-end projects with the following technologies: React.js, JavaScript, Java, JavaFx, HTML, and CSS. I am also happy to learn other technologies if needed.
+                    A server-side component of the myFlix web applications. Key features include access to movie details, user management, data validation, and authentication. See my Github for more details at the link below!
                 </p>
-                <a href="#">Contact me</a>
+                <div class="grid__item-button">              
+                    <button href="https://github.com/Beaugmc86/movie_api">Project Code</button>
+                </div>
+            </div>
+            <div class="grid__item">
+                <h2>Chatter App</h2>
+                <img src="img/Chatter App.png" class="cardimg">
+                <p>
+                    A chat app built for mobile devices using React Native. The app will provide users with a chat interface and options to share images and their location. It works on both iOS and Android devices and utilizes Google Firestore/Firebase for storing messages and images. Guest authentication is handled via Google Firebase authentication.
+                <div class="grid__item-button">              
+                    <button href="https://github.com/Beaugmc86/movie_api">Project Code</button>
+                </div>
             </div>
         </div>
     </main>
@@ -100,6 +117,6 @@
                 <img src="img/linkedin_icon.svg" alt="Linkedin"></a>
         </div>
     </footer>
-<script src="js/tota11y.min.js"></script>
+<!-- <script src="js/tota11y.min.js"></script> -->
 </body>
 </html>
