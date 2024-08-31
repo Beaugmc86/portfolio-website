@@ -233,90 +233,38 @@ button:active {
 
 .heading-contact,
 .work-header,
-.work-header_item,
-.contact-info {
+.work-header_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-/* .heading-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.contact-container {
     display: flex;
-    width: 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.work-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.contact {
     display: flex;
-    width: 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-}
-
-.work-header_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 1fr;
-    padding: 24px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-} 
-
-.contact-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 1fr;
-    padding: 24px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-} */
-
-.grid-contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
-    margin: 0 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--grid-primary-color);
+    max-width: 600px;
+    width: 100%;
     padding: 24px 32px;
     border-radius: 12px;
 }
 
-.grid-contact__item {
+.contact__item {
     padding: 0 24px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .cardimg {
