@@ -162,11 +162,6 @@ a:active {
     text-align: center;
 }
 
-
-/* .grid__item:last-child {
-    grid-column: span 3;
-} */
-
 .page-footer {
     display: flex;
     flex-direction: column;
